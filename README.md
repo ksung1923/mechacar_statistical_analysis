@@ -5,7 +5,7 @@
 The MechaCar_mpg.csv dataset contains mpg test results for 50 prototype MechaCars. I design a linear model that predicts the mpg of MechaCar prototypes using several variables from the MechaCar_mpg.csv. 
 
 Linear Model Statistical Summary: 
-![LinearRegression](https://github.com/ksung1923/ufos/blob/df02aaa4656538de19e7b181a7571f5b4000cc3e/Resources/Storyboard.png)
+![LinearRegression](https://github.com/ksung1923/mechacar_statistical_analysis/blob/c9556945d397107a0527c0be414128cda2b2d62f/Resources/1_Linear_Regression.PNG)
 
 
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
@@ -38,11 +38,11 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Please see the summary statistics calculated on the suspension coil dataset: 
 
 All Manufacturing Lots Summary Statistics: 
-![TotalSummary](https://github.com/ksung1923/ufos/blob/df02aaa4656538de19e7b181a7571f5b4000cc3e/Resources/Storyboard.png)
+![TotalSummary](https://github.com/ksung1923/mechacar_statistical_analysis/blob/c9556945d397107a0527c0be414128cda2b2d62f/Resources/2_Total_Summary.PNG)
 
 
 Individual Manufacturing Lot Summary Statistics: 
-![LotSummary](https://github.com/ksung1923/ufos/blob/df02aaa4656538de19e7b181a7571f5b4000cc3e/Resources/Storyboard.png)
+![LotSummary](https://github.com/ksung1923/mechacar_statistical_analysis/blob/c9556945d397107a0527c0be414128cda2b2d62f/Resources/2_Lot_Summary.PNG)
 
 
 1. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
@@ -55,30 +55,28 @@ Next, looking at each lot individually, Lot 1 and Lot 2 are well within the 100 
 Using your knowledge of R, perform t-tests to determine if all manufacturing lots and each lot individually are statistically different from the population mean of 1,500 pounds per square inch.
 
 1. Summary of T-Test of All Manufacturing Lots
-![T_Lots](https://github.com/ksung1923/ufos/blob/df02aaa4656538de19e7b181a7571f5b4000cc3e/Resources/Storyboard.png)
+![T_Lots](https://github.com/ksung1923/mechacar_statistical_analysis/blob/c9556945d397107a0527c0be414128cda2b2d62f/Resources/3_TLots.PNG)
 
 From the T-Test, the true mean of the sample is 1498.78 with a p-Value of 0.06. The p-value is higher than the common significance level of 0.05, so there is NOT enough evidence to support rejecting the null hypothesis. The mean of all three of these manufacturing lots is statistically similar to the presumed population mean of 1500.
 
 2. Summary of T-Test of Manufacturing Lot 1
-![T_Lot1](https://github.com/ksung1923/ufos/blob/df02aaa4656538de19e7b181a7571f5b4000cc3e/Resources/Storyboard.png)
+![T_Lot1](https://github.com/ksung1923/mechacar_statistical_analysis/blob/c9556945d397107a0527c0be414128cda2b2d62f/Resources/3_TLot1.PNG)
 
 
 Lot 1 has a sample mean of 1500 with a p-Value of 1. We cannot reject the null hypothesis that there is no statistical difference between the observed sample mean and the presumed population mean of 1500.
 
 3. Summary of T-Test of Manufacturing Lot 2
-![T_Lot2](https://github.com/ksung1923/ufos/blob/df02aaa4656538de19e7b181a7571f5b4000cc3e/Resources/Storyboard.png)
+![T_Lot2](https://github.com/ksung1923/mechacar_statistical_analysis/blob/c9556945d397107a0527c0be414128cda2b2d62f/Resources/3_TLot2.PNG)
 
 Lot 2 has a sample mean of 1500.02 with a p-Value of 0.61. The null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
 
 4. Summary of T-Test of Manufacturing Lot 3
-![T_Lot3](https://github.com/ksung1923/ufos/blob/df02aaa4656538de19e7b181a7571f5b4000cc3e/Resources/Storyboard.png)
+![T_Lot3](https://github.com/ksung1923/mechacar_statistical_analysis/blob/c9556945d397107a0527c0be414128cda2b2d62f/Resources/3_TLot3.PNG)
 
 Similar to what we saw in the summary statistics of the suspension coils, Lot 3 is a different scenario compared to Lot 1 and 2. The sample mean is 1496.14 and the p-Value is 0.04, which is lower than the common significance level of 0.05. We can reject the null hypothesis that this sample mean and the presumed population mean are not statistically different.
 
 
 ## Study Design: MechaCar vs Competition
-Write a short description of a statistical study that can quantify how the MechaCar performs against the competition. In your study design, think critically about what metrics would be of interest to a consumer: for a few examples, cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating.
-
 When buying a car, customers are often interested in the following metrics: cost, city or highway fuel efficiency, horse power, maintenance cost, or safety rating. A statistical study that can help quantify how the MechaCar performs against the competition could involve testing these metics against the safety rating over the last five years. This will allow us to see how MechaCar performs against the competition.  
 
 1. What metric or metrics are you going to test?
