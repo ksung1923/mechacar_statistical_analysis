@@ -43,12 +43,17 @@ lot_summary <- sus_coil %>% group_by(Manufacturing_Lot) %>%
 
 # V. DELIVERABLE 3: T-TESTS ON SUSPENSION COILS  -------------------------------
 
-t.test(log10(sus_coil$PSI), mu=mean(log10(sus_coil$PSI))) #compare all lots versus population means
+#1) compare all lots versus population means
+t.test(sus_coil$PSI, mu=1500) 
 
-t.test(log10(subset(sus_coil, Manufacturing_Lot == "Lot1", PSI)), mu=mean(log10(sus_coil$PSI))) #compare Lot1 versus population means
+#2) compare Lot1 versus population means
+t.test(subset(sus_coil, Manufacturing_Lot == "Lot1", PSI), mu=1500) 
 
-t.test(log10(subset(sus_coil, Manufacturing_Lot == "Lot2", PSI)), mu=mean(log10(sus_coil$PSI))) #compare Lot2 versus population means
+#3) compare Lot2 versus population means
+t.test(subset(sus_coil, Manufacturing_Lot == "Lot2", PSI), mu=1500) 
 
-t.test(log10(subset(sus_coil, Manufacturing_Lot == "Lot3", PSI)), mu=mean(log10(sus_coil$PSI))) #compare Lot3 versus population means
+#4) compare Lot3 versus population means
+t.test(subset(sus_coil, Manufacturing_Lot == "Lot3", PSI), mu=1500) 
+
 
     
